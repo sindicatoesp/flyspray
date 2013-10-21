@@ -524,7 +524,6 @@ abstract class Backend
 		else if ($mail != '')
 	  	    $db->Query("INSERT INTO {user_emails}(id,email_address) VALUES (?,?)",array($user_id,strtolower($mail)));
         }
-	Flyspray::show_error($i);
 
         // Get this user's id for the record
         $uid = Flyspray::UserNameToId($user_name);
